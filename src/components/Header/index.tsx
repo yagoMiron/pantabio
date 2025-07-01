@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     function handleScroll() {
       const scrollY = window.scrollY;
-      setScrolled(scrollY > 900);
+      setScrolled(scrollY > 1000);
     }
 
     window.addEventListener("scroll", handleScroll);
