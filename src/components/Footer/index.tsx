@@ -9,11 +9,11 @@ const Footer = () => {
     <div className={styles.page}>
       <div className={styles.logo_area}>
         <img src={logo} alt="Pantabio Bioprospectando o futuro" />
-        <p>Todos os direitos reservados.</p>
+        <p className={styles.marca}>Todos os direitos reservados.</p>
       </div>
       <div className={styles.contact_area}>
         <div className={styles.address_area}>
-          <button>Voltar ao topo</button>
+          <button className={styles.back_btn}>Voltar ao topo</button>
           <p className={styles.address}>
             Rodovia Graziela Maciel Barroso, Aquidauana, Mato Grosso do Sul
             79200-000
