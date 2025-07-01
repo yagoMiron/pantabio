@@ -14,6 +14,30 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   height: 100vh;
+  color: #2b4840;
+  text-align: start;
+}
+.text_area {
+  padding: 50px;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 56px;
+  width: 100%;
+  padding: 50px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.subtitle {
+  font-size: 40px;
+  width: calc(100% - 418px);
+}
+.description {
+  font-size: 28px;
+  width: calc(100% - 418px);
+}
+.separator {
+  border-color: #2b4840;
 }
