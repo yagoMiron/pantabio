@@ -32,7 +32,11 @@
 }
 .subtitle {
   font-size: 40px;
+}
+.subtitle_area {
   width: calc(100% - 418px);
+  display: flex;
+  gap: 50px;
 }
 .description {
   font-size: 28px;

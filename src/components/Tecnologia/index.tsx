@@ -1,15 +1,19 @@
 import styles from "./styles.module.css";
 import celula from "../../assets/img/Celula.png";
+import diagonalArrow from "../../assets/icons/diagonal-arrow.svg";
 
 const Tecnologia = () => {
   return (
     <div className={styles.page}>
       <h1 className={styles.title}>Nossa Tecnologia</h1>
       <div className={styles.text_area}>
-        <h3 className={styles.subtitle}>
-          Nossas cepas são adaptadas ao clima, solo e ambiente da região do
-          Pantanal e Cerrado
-        </h3>
+        <div className={styles.subtitle_area}>
+          <h3 className={styles.subtitle}>
+            Nossas cepas são adaptadas ao clima, solo e ambiente da região do
+            Pantanal e Cerrado
+          </h3>
+          <img src={diagonalArrow} alt="seta diagonal" />
+        </div>
         <hr className={styles.separator} />
         <p className={styles.description}>
           Dessa forma, podendo assim expressar seu máximo potencial frente as
