@@ -14,7 +14,7 @@ const Footer = () => {
       <div className={styles.contact_area}>
         <div className={styles.address_area}>
           <button>Voltar ao topo</button>
-          <p>
+          <p className={styles.address}>
             Rodovia Graziela Maciel Barroso, Aquidauana, Mato Grosso do Sul
             79200-000
           </p>
