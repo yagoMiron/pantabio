@@ -1,0 +1,6 @@
+.page {
+  background-color: #162116;
+  display: flex;
+  min-height: 50vh;
+  color: #2b4840;
+}
