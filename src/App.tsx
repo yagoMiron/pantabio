@@ -8,19 +8,23 @@ import Equipe from "./components/Equipe";
 import Servicos from "./components/Servicos";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Sobre />
-      <Tecnologia />
-      <Solucoes />
-      <Validacoes />
-      <Equipe />
-      <Servicos />
-      <Contato />
-      <Footer />
+      <div>
+        <Home />
+        <Sobre />
+        <Tecnologia />
+        <Solucoes />
+        <Validacoes />
+        <Equipe />
+        <Servicos />
+        <Contato />
+        <Footer />
+      </div>
     </div>
   );
 }
