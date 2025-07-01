@@ -1,4 +1,57 @@
 .page {
   position: fixed;
-  background-color: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  background-color: transparent;
+  font-family: "Titillium Web", sans-serif;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+  background-color: #2b4840;
+  box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 9px 28px;
+  border-radius: 10px;
+  color: white;
+  background-color: #8cc869;
+  border: none;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #2b4840;
+}
+
+.icon {
+  height: 40px;
+  margin-left: 4dvh;
+  margin-top: 1dvh;
+}
+
+.page div {
+  display: flex;
+  gap: 50px;
+}
+
+.page a {
+  padding-top: 1dvh;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.page a:hover {
+  color: black;
 }

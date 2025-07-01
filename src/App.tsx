@@ -15,14 +15,30 @@ function App() {
     <div className="App">
       <Header />
       <div>
-        <Home />
-        <Sobre />
-        <Tecnologia />
-        <Solucoes />
-        <Validacoes />
-        <Equipe />
-        <Servicos />
-        <Contato />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="sobre">
+          <Sobre />
+        </section>
+        <section id="tecnologia">
+          <Tecnologia />
+        </section>
+        <section id="solucoes">
+          <Solucoes />
+        </section>
+        <section id="validacoes">
+          <Validacoes />
+        </section>
+        <section id="equipe">
+          <Equipe />
+        </section>
+        <section id="servicos">
+          <Servicos />
+        </section>
+        <section id="contato">
+          <Contato />
+        </section>
         <Footer />
       </div>
     </div>
