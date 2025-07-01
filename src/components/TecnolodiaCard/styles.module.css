@@ -1,11 +1,12 @@
 .card {
-  width: 500px;
+  width: 560px;
+  min-height: 168px;
   display: flex;
   background-color: #8cc869;
   border: 1px solid white;
   border-radius: 16px;
   box-sizing: border-box;
-  padding: 16px 16px;
+  padding: 16px 32px;
   gap: 20px;
   align-items: center;
 }
@@ -21,5 +22,4 @@
 .description {
   font-size: 18px;
   margin: 0;
-  padding-top: 16px;
 }

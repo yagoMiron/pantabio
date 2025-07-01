@@ -20,13 +20,14 @@
   text-align: start;
 }
 .text_area {
-  padding: 50px;
+  padding: 60px;
+  padding-top: 0;
   box-sizing: border-box;
 }
 .title {
   font-size: 56px;
   width: 100%;
-  padding: 50px;
+  padding: 60px;
   margin: 0;
   box-sizing: border-box;
 }
@@ -48,9 +49,9 @@
 .card_area {
   display: flex;
   gap: 32px;
-  padding: 16px 50px;
+  padding: 16px 60px;
 }
 .displaced_line {
-  padding-left: 100px;
+  padding-left: 180px;
   padding-bottom: 40px;
 }

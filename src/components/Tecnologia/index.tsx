@@ -55,7 +55,7 @@ const Tecnologia = () => {
           title="Eficiência"
           text="Aumenta a produtividade e a qualidade das colheitas, tornando sua propriedade um modelo de agricultura sustentável."
         >
-          <img src={crescimento} alt="Eficiência" />
+          <img src={eficiencia} alt="Eficiência" />
         </TecnologiaCard>
       </div>
       <div className={styles.absolute}>
