@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "regular";
+  src: url(./Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(./Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+  font-family: "italic";
+  src: url(./Titillium_Web/TitilliumWeb-Italic.ttf);
+}
