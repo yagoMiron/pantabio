@@ -1,0 +1,9 @@
+.page {
+  background-color: #d9d9d9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}

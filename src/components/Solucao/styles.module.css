@@ -1,0 +1,18 @@
+.page {
+  background-image: url("../../assets/img/soculesBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.color_filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: white;
+}

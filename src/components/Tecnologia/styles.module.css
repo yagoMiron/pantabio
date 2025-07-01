@@ -1,0 +1,19 @@
+.absolute {
+  position: absolute;
+  left: calc(100vw - 418px);
+  display: flex;
+  height: 92vh;
+  margin-top: 4vh;
+}
+.celula {
+  min-height: 889px;
+}
+.page {
+  background-color: #8baa93;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
