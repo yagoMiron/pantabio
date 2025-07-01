@@ -7,9 +7,8 @@ import card3 from "../../assets/img/Validacoes3.png";
 import card4 from "../../assets/img/Validacoes4.png";
 import card5 from "../../assets/img/Validacoes5.png";
 import card6 from "../../assets/img/Validacoes6.png";
-
 import downArrow from "../../assets/icons/down-arrow.svg";
-
+import InstagramCard from "../InstagramCard";
 const imagens = [card1, card2, card3, card4, card5, card6];
 
 const Validacoes = () => {
@@ -53,6 +52,7 @@ const Validacoes = () => {
           <img src={downArrow} alt="Próxima" />
         </button>
       </div>
+      <InstagramCard></InstagramCard>
     </div>
   );
 };
