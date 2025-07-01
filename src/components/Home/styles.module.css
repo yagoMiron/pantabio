@@ -2,22 +2,53 @@
   background-image: url("../../assets/img/header.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.description {
+  gap: 60px;
   margin: 0;
   padding-top: 45%;
+  padding-bottom: 60px;
+}
+.description {
   color: white;
   font-size: 2rem;
   width: 60%;
 }
 .btn {
   font-size: 2rem;
-  margin: 60px;
-  padding: 10px 20px;
+  padding: 16px 24px;
   border-radius: 10px;
   color: white;
   background-color: #8cc869;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #2b4840;
+}
+.arrow {
+  cursor: pointer;
+  margin: 10px;
+  width: 52px;
+  padding: 18px 8px 0px 8px;
+  border-radius: 50%;
+  border: 3px solid #8cc869;
+  transition: 1s;
+}
+.arrow:hover {
+  animation: bounceIn 1s infinite 1ms;
+}
+
+@keyframes bounceIn {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
