@@ -1,5 +1,6 @@
 .page {
   background-image: url("../../assets/img/header.png");
+  background-position-y: -100px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9,8 +10,7 @@
   align-items: center;
   gap: 60px;
   margin: 0;
-  padding-top: 45%;
-  padding-bottom: 60px;
+  padding-top: 35%;
 }
 .description {
   color: white;
