@@ -28,7 +28,7 @@ const Validacoes = () => {
     setTimeout(() => {
       setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
       setFade(true);
-    }, 100);
+    }, 250);
   };
 
   return (

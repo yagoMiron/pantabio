@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: transparent;
+}
+
+.cardContato {
+  position: relative;
+  width: 741px;
+  height: 171px;
+}
+
+.svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.button {
+  position: absolute;
+  top: 94px;
+  left: 54px;
+  width: 452px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  color: #2b4840;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+.buttonLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowDown {
+  transform: rotate(90deg);
+  margin-right: -100px;
+}
