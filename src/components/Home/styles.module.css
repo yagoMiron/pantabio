@@ -33,22 +33,24 @@
   cursor: pointer;
   margin: 10px;
   width: 52px;
-  padding: 18px 8px 0px 8px;
+  padding: 17px 9px 0px 9px;
   border-radius: 50%;
   border: 3px solid #8cc869;
   transition: 1s;
 }
 .arrow:hover {
-  animation: bounceIn 1s infinite 1ms;
+  animation: bounceIn 1s infinite 1ms ease-in;
 }
 
 @keyframes bounceIn {
   0%,
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
-  50% {
-    transform: translateY(-30px);
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
   }
 }

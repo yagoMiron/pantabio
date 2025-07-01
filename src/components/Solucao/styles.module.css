@@ -11,8 +11,61 @@
   background-color: rgba(0, 0, 0, 0.3);
   height: 100vh;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  padding: 50px;
 }
 .title {
   color: white;
+  font-size: 51px;
+  margin: 0;
+}
+.card_area {
+  display: flex;
+  gap: 32px;
+}
+.arrow {
+  cursor: pointer;
+  margin: 10px;
+  width: 30px;
+  padding: 13px 6px 0px 6px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: 1s;
+}
+.btn_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.btn {
+  border-radius: 32px;
+  font-size: 24px;
+  padding: 6px 24px;
+  background-color: #8cc869;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2b4840;
+}
+
+.arrow:hover {
+  animation: bounceIn 1s infinite 1ms ease-in;
+}
+
+@keyframes bounceIn {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
 }
