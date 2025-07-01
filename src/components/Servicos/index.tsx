@@ -2,7 +2,6 @@ import styles from "./styles.module.css";
 import iconeOk from "../../assets/img/OutrosServicosOk.png";
 import iconeArrow from "../../assets/img/ServicosDisponiveis.png";
 import ContatoCard from "../ContatoCard";
-import InstagramCard from "../InstagramCard";
 
 export default function OutrosServicos() {
   return (
@@ -72,7 +71,11 @@ export default function OutrosServicos() {
           </ul>
         </div>
       </div>
+
       <ContatoCard />
+
+      {/* divisória horizontal */}
+      <div className={styles.divisoriaHorizontal}></div>
     </div>
   );
 }

@@ -1,0 +1,84 @@
+.contatoSection {
+  height: 541px;
+  background-color: #2b4840;
+  background-image: url("../../assets/img/FundoContato.svg");
+  background-repeat: repeat-x;
+  background-size: 50% auto;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.textoContato {
+  max-width: 700px;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 351px;
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  color: #8cc869;
+  font-size: 56px;
+  margin-bottom: 0.1rem;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: -20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1200px;
+  margin-left: -20px;
+  width: 120%;
+  margin-right: 20px;
+}
+
+.inputLinha {
+  display: flex;
+  gap: 2rem;
+  width: 105%;
+}
+
+.input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #ffff;
+  font-size: 18px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #ffff;
+  font-size: 18px;
+  resize: none;
+  height: 120px;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: white;
+  opacity: 1; /* garante visibilidade total */
+}
