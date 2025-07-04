@@ -45,7 +45,13 @@ const Solucoes = () => {
         </div>
         <div className={styles.btn_area}>
           <button className={styles.btn}>Saiba mais</button>
-          <img src={downArrow} alt="seta para baixo" className={styles.arrow} />
+          <a href="#validacoes">
+            <img
+              src={downArrow}
+              alt="seta para baixo"
+              className={styles.arrow}
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -55,3 +55,58 @@
   padding-left: 180px;
   padding-bottom: 40px;
 }
+
+@media (max-width: 820px) {
+  .page {
+    align-items: center;
+    min-height: 1000px;
+  }
+  .title {
+    font-size: 40px;
+    padding: 40px 40px;
+    text-align: center;
+  }
+  .subtitle_area {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .subtitle {
+    font-size: 16px;
+    margin: 0px;
+  }
+  .arrow {
+    transform: rotate(90deg);
+    height: 33px;
+  }
+  .description {
+    font-size: 12px;
+    width: 100%;
+  }
+  .text_area {
+    padding: 0px 40px 40px 40px;
+    box-sizing: border-box;
+  }
+  .card_area {
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px 0px;
+  }
+  .displaced_line {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .absolute {
+    position: absolute;
+    left: 26.5vw;
+    align-items: end;
+    display: flex;
+    height: 80vw;
+    margin-top: calc(1000px - 100vw / 1.9);
+  }
+  .celula {
+    transform: rotate(90deg);
+    min-height: 100px;
+    height: 100vw;
+  }
+}

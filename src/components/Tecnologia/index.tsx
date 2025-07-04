@@ -4,7 +4,6 @@ import sustentabilidade from "../../assets/img/NossaTecnologia1.png";
 import crescimento from "../../assets/img/NossaTecnologia2.png";
 import resistencia from "../../assets/img/NossaTecnologia3.png";
 import eficiencia from "../../assets/img/NossaTecnologia4.png";
-
 import diagonalArrow from "../../assets/icons/diagonal-arrow.svg";
 import TecnologiaCard from "../TecnolodiaCard";
 
@@ -18,7 +17,11 @@ const Tecnologia = () => {
             Nossas cepas são adaptadas ao clima, solo e ambiente da região do
             Pantanal e Cerrado
           </h3>
-          <img src={diagonalArrow} alt="seta diagonal" />
+          <img
+            className={styles.arrow}
+            src={diagonalArrow}
+            alt="seta diagonal"
+          />
         </div>
         <hr className={styles.separator} />
         <p className={styles.description}>

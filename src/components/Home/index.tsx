@@ -11,7 +11,9 @@ const Home = () => {
           ajudar.
         </p>
         <button className={styles.btn}>Descubra</button>
-        <img src={downArrow} alt="Arrow" className={styles.arrow} />
+        <a href="#sobre">
+          <img src={downArrow} alt="Arrow" className={styles.arrow} />
+        </a>
       </div>
     </div>
   );
