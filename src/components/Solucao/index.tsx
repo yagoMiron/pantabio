@@ -3,6 +3,8 @@ import downArrow from "../../assets/icons/down-arrow-white.svg";
 import SolucaoCard from "../SolucaoCard";
 
 const Solucoes = () => {
+  const larguraTela = window.screen.width;
+  const desktop = larguraTela >= 820;
   return (
     <div className={styles.page}>
       <div className={styles.color_filter}>
@@ -43,16 +45,18 @@ const Solucoes = () => {
             </p>
           </SolucaoCard>
         </div>
-        <div className={styles.btn_area}>
-          <button className={styles.btn}>Saiba mais</button>
-          <a href="#validacoes">
-            <img
-              src={downArrow}
-              alt="seta para baixo"
-              className={styles.arrow}
-            />
-          </a>
-        </div>
+        {desktop && (
+          <div className={styles.btn_area}>
+            <button className={styles.btn}>Saiba mais</button>
+            <a href="#validacoes">
+              <img
+                src={downArrow}
+                alt="seta para baixo"
+                className={styles.arrow}
+              />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
