@@ -4,7 +4,7 @@ import SolucaoCard from "../SolucaoCard";
 
 const Solucoes = () => {
   const larguraTela = window.screen.width;
-  const desktop = larguraTela >= 820;
+  const desktop = larguraTela > 820;
   return (
     <div className={styles.page}>
       <div className={styles.color_filter}>
