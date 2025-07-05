@@ -74,7 +74,11 @@ const Validacoes = () => {
           <img src={downArrow} alt="Próxima" />
         </button>
       </div>
-      <InstagramCard></InstagramCard>
+      <div className={styles.areaInstagram}>
+        <div className={styles.deslocador}>
+          <InstagramCard />
+        </div>
+      </div>
     </div>
   );
 };

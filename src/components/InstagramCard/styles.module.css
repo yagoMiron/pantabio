@@ -29,9 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: left; /* seta alinhada à direita */
-  padding: 0 20px;
+  padding: 0;
   text-decoration: none;
-  background: transparent;
+  background-color: #8cc869;
+  border-radius: 40px;
   border: none;
   cursor: pointer;
   z-index: 2; /* acima do SVG */
@@ -39,9 +40,13 @@
   font-weight: 600;
   font-size: 1.3rem;
 }
+.button:hover {
+  background-color: #2b4840;
+  color: #8cc869;
+}
 
 .arrow {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .buttonLeft {
@@ -53,16 +58,16 @@
 .instagram {
   background-color: #2b4840;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .instagram img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   filter: brightness(0) saturate(100%) invert(66%) sepia(23%) saturate(500%)
     hue-rotate(58deg) brightness(100%) contrast(90%);
 }
@@ -76,18 +81,22 @@
     height: 121px;
   }
   .arrow {
-    margin-left: 0;
+    margin-left: 24px;
     height: 30px;
   }
   .instagram {
     width: 30px;
     height: 30px;
   }
+  .instagram img {
+    width: 20px;
+    height: 20px;
+  }
   .button {
     position: absolute;
     top: 67px;
     left: 8px;
-    width: 452px;
+    width: 250px;
     height: 30px;
   }
 }
