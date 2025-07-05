@@ -20,22 +20,26 @@ export default function OutrosServicos() {
           </p>
 
           <div className={styles.servicosTitulo}>
-            <img src={iconeOk} alt="Ícone" />
+            <img src={iconeArrow} alt="Ícone" />
             <strong>Serviços Disponíveis:</strong>
           </div>
 
           <ul className={styles.lista}>
             <li>
-              <img src={iconeArrow} alt="✓" />
-              Diagnóstico de doenças foliares, radiculares e sistêmicas
+              <img src={iconeOk} alt="✓" />
+              <strong>
+                Diagnóstico de doenças foliares, radiculares e sistêmicas
+              </strong>
             </li>
             <li>
-              <img src={iconeArrow} alt="✓" />
-              Recomendações para manejo integrado de doenças (MID)
+              <img src={iconeOk} alt="✓" />
+              <strong>
+                Recomendações para manejo integrado de doenças (MID)
+              </strong>
             </li>
             <li>
-              <img src={iconeArrow} alt="✓" />
-              Suporte técnico personalizado
+              <img src={iconeOk} alt="✓" />
+              <strong>Suporte técnico personalizado</strong>
             </li>
           </ul>
         </div>
@@ -58,15 +62,19 @@ export default function OutrosServicos() {
           <ul className={styles.lista}>
             <li>
               <img src={iconeArrow} alt="✓" />
-              Identificação de espécies fitoparasitas
+              <strong>Identificação de espécies fitoparasitas</strong>
             </li>
             <li>
               <img src={iconeArrow} alt="✓" />
-              Orientação sobre manejo biológico, químico e cultural
+              <strong>
+                Orientação sobre manejo biológico, químico e cultural
+              </strong>
             </li>
             <li>
               <img src={iconeArrow} alt="✓" />
-              Relatórios claros e práticos para tomada de decisão
+              <strong>
+                Relatórios claros e práticos para tomada de decisão
+              </strong>
             </li>
           </ul>
         </div>

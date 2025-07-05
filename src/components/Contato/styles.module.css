@@ -1,5 +1,5 @@
 .contatoSection {
-  height: 541px;
+  min-height: 541px;
   background-color: #2b4840;
   background-image: url("../../assets/img/FundoContato.svg");
   background-repeat: repeat-x;
@@ -18,11 +18,8 @@
 }
 
 .textoContato {
-  max-width: 700px;
   text-align: left;
-  align-self: flex-start;
-  margin-left: 351px;
-  margin-bottom: 2rem;
+  width: 80vw;
 }
 
 .titulo {
@@ -35,23 +32,21 @@
   color: white;
   font-size: 18px;
   line-height: 1.6;
-  margin-top: -20px;
+  margin-top: 0;
+  line-height: 24px;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 1200px;
-  margin-left: -20px;
-  width: 120%;
-  margin-right: 20px;
+  width: 80vw;
 }
 
 .inputLinha {
   display: flex;
   gap: 2rem;
-  width: 105%;
+  width: 100%;
 }
 
 .input {
@@ -62,12 +57,9 @@
   background: rgba(255, 255, 255, 0.5);
   color: #ffff;
   font-size: 18px;
-  width: 100%;
-  margin-right: 10px;
 }
 
 .textarea {
-  width: 100%;
   padding: 1rem 1.5rem;
   border: 1px solid white;
   border-radius: 12px;
@@ -81,4 +73,13 @@
 .textarea::placeholder {
   color: white;
   opacity: 1; /* garante visibilidade total */
+}
+@media (max-width: 820px) {
+  .contatoSection {
+    padding-bottom: 50px;
+  }
+  .inputLinha {
+    flex-direction: column;
+    gap: 16px;
+  }
 }

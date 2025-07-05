@@ -17,17 +17,17 @@ export default function Contato() {
           <div className={styles.inputLinha}>
             <input
               type="text"
-              placeholder="Seu nome"
+              placeholder="1. Seu nome"
               className={styles.input}
             />
             <input
               type="email"
-              placeholder="Seu email"
+              placeholder="2. Seu email"
               className={styles.input}
             />
           </div>
           <textarea
-            placeholder="Sua mensagem"
+            placeholder="3. Sua mensagem"
             className={styles.textarea}
           ></textarea>
         </form>
