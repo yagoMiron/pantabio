@@ -66,6 +66,29 @@
   background-position: center;
   background-position-x: 186px;
 }
+.social a {
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+}
+.instagram {
+  background-image: url("../../assets/icons/InstagramIcon.svg");
+}
+.instagram:hover {
+  background-image: url("../../assets//icons/InstagramIcon_hover.svg");
+}
+.whatsapp {
+  background-image: url("../../assets/icons/WhatsappIcon.svg");
+}
+.whatsapp:hover {
+  background-image: url("../../assets/icons/WhatsappIcon_hover.svg");
+}
+.linkedIn {
+  background-image: url("../../assets/icons/LinkedInIcon.svg");
+}
+.linkedIn:hover {
+  background-image: url("../../assets/icons/LinkedInIcon_hover.svg");
+}
 @media (max-width: 820px) {
   .page {
     flex-direction: column;

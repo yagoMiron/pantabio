@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 import logo from "../../assets/img/LogoFooter.svg";
-import linkedIn from "../../assets/img/LinkedinIcon.png";
-import instagram from "../../assets/img/InstagramIcon.png";
-import whatsapp from "../../assets/img/WhatsappIcon.png";
+import linkedIn from "../../assets/icons/LinkedInIcon.svg";
+import instagram from "../../assets/icons/InstagramIcon.svg";
+import whatsapp from "../../assets/icons/WhatsappIcon.svg";
 import { ChevronUp } from "lucide-react";
 
 const Footer = () => {
@@ -27,21 +27,12 @@ const Footer = () => {
         </div>
         <div className={styles.social_area}>
           <div className={styles.social}>
-            <img
-              className={styles.social_icon}
-              src={linkedIn}
-              alt="Entre em contato pelo LinkedIn"
-            />
-            <img
-              className={styles.social_icon}
-              src={instagram}
-              alt="Entre em contato pelo Instagram"
-            />
-            <img
-              className={styles.social_icon}
-              src={whatsapp}
-              alt="Entre em contato pelo Whatsapp"
-            />
+            <a href="" className={styles.linkedIn}></a>
+            <a
+              href="https://www.instagram.com/pantabio/"
+              className={styles.instagram}
+            ></a>
+            <a href="" className={styles.whatsapp}></a>
           </div>
           <p className={styles.globe}>Brasil, 2025</p>
         </div>
