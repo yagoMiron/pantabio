@@ -18,13 +18,23 @@ const Header = () => {
   return (
     <nav className={`${styles.page} ${scrolled ? styles.scrolled : ""}`}>
       <img className={styles.icon} src={icone} alt="icone" />
-      <div>
-        <a href="#sobre">Sobre</a>
-        <a href="#tecnologia">Tecnologia</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#validacoes">Validações</a>
-        <a href="#equipe">Equipe</a>
-        <a href="#contato" className={styles.btn}>
+      <div className={styles.nav}>
+        <a className={styles.nav_a} href="#sobre">
+          Sobre
+        </a>
+        <a className={styles.nav_a} href="#tecnologia">
+          Tecnologia
+        </a>
+        <a className={styles.nav_a} href="#solucoes">
+          Soluções
+        </a>
+        <a className={styles.nav_a} href="#validacoes">
+          Validações
+        </a>
+        <a className={styles.nav_a} href="#equipe">
+          Equipe
+        </a>
+        <a className={styles.btn} href="#contato">
           Contato
         </a>
       </div>

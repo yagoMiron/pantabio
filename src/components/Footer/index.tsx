@@ -1,8 +1,5 @@
 import styles from "./styles.module.css";
 import logo from "../../assets/img/LogoFooter.svg";
-import linkedIn from "../../assets/icons/LinkedInIcon.svg";
-import instagram from "../../assets/icons/InstagramIcon.svg";
-import whatsapp from "../../assets/icons/WhatsappIcon.svg";
 import { ChevronUp } from "lucide-react";
 
 const Footer = () => {
