@@ -3,6 +3,7 @@ import logo from "../../assets/img/LogoFooter.svg";
 import linkedIn from "../../assets/img/LinkedinIcon.png";
 import instagram from "../../assets/img/InstagramIcon.png";
 import whatsapp from "../../assets/img/WhatsappIcon.png";
+import { ChevronUp } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,7 +14,11 @@ const Footer = () => {
       </div>
       <div className={styles.contact_area}>
         <div className={styles.address_area}>
-          <button className={styles.back_btn}>Voltar ao topo</button>
+          <a href="#home" className={styles.back_btn}>
+            Voltar ao topo
+            <ChevronUp height={36} width={44} />
+          </a>
+
           <p className={styles.address}>
             Rodovia Graziela Maciel Barroso
             <br />
