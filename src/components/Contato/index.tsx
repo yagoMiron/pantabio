@@ -1,7 +1,12 @@
 import styles from "./styles.module.css";
 import { MailPlus } from "lucide-react";
+import sendEmail from "../../services/sendEmail";
+import { useState } from "react";
 
 export default function Contato() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div className={styles.contatoSection}>
       <div className={styles.textoContainer}>
@@ -14,25 +19,51 @@ export default function Contato() {
           </p>
         </div>
 
-        <form className={styles.formulario}>
+        <form
+          className={styles.formulario}
+          onSubmit={(e) => e.preventDefault()}
+        >
           <div className={styles.inputLinha}>
             <input
               type="text"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+              required
               placeholder="1. Seu nome"
               className={styles.input}
             />
             <input
               type="email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              required
               placeholder="2. Seu email"
               className={styles.input}
             />
           </div>
           <textarea
             placeholder="3. Sua mensagem"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+            required
             className={styles.textarea}
-          ></textarea>
+          />
 
-          <button className={styles.sendBtn}>
+          <button
+            className={styles.sendBtn}
+            onClick={() => {
+              sendEmail({ name, email, message });
+              setName("");
+              setEmail("");
+              setMessage("");
+            }}
+          >
             4. Enviar mensagem <MailPlus height={32} width={32} />
           </button>
         </form>
