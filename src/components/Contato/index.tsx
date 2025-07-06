@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import { MailPlus } from "lucide-react";
 
 export default function Contato() {
   return (
@@ -30,7 +31,10 @@ export default function Contato() {
             placeholder="3. Sua mensagem"
             className={styles.textarea}
           ></textarea>
-          <button className={styles.sendBtn}>Enviar mensagem</button>
+
+          <button className={styles.sendBtn}>
+            4. Enviar mensagem <MailPlus height={32} width={32} />
+          </button>
         </form>
       </div>
     </div>

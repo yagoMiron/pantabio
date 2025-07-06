@@ -1,5 +1,5 @@
 .contatoSection {
-  min-height: 541px;
+  min-height: 620px;
   background-color: #2b4840;
   background-image: url("../../assets/img/FundoContato.svg");
   background-repeat: repeat-x;
@@ -74,13 +74,21 @@
   color: white;
   opacity: 1; /* garante visibilidade total */
 }
+
 .sendBtn {
   font-size: 24px;
   background-color: #8cc869;
   border: solid 1px #8cc869;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
   color: #2b4840;
   font-family: "bold";
   border-radius: 12px;
+}
+.sendBtn svg {
+  margin-top: 3px;
 }
 .sendBtn:hover {
   cursor: pointer;

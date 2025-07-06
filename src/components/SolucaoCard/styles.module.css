@@ -8,7 +8,6 @@
   box-sizing: border-box;
   padding: 16px;
   gap: 20px;
-  align-items: center;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
 }
@@ -32,6 +31,12 @@
   text-align: start;
 }
 
+.btn_area {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .btn {
   width: 100%;
   border-radius: 40px;
@@ -40,18 +45,27 @@
   border: none;
   font-size: 18px;
   text-align: start;
-  padding: 4px 16px 7px 16px;
+  padding: 4px 8px 7px 10px;
   background-image: url("../../assets/icons/right_arrow.svg");
   background-repeat: no-repeat;
   background-size: 27;
   background-position: center;
   background-position-x: calc(100% - 12px);
   border: solid 1px #8cc869;
+  margin-right: 20px;
+  z-index: 2;
 }
 
 .btn:hover {
   background-image: url("../../assets/icons/right_arrow_hover.svg");
   cursor: pointer;
   background-color: #2b4840;
+  color: #8cc869;
+}
+
+.circle {
+  position: absolute;
+  right: 0;
+  z-index: 1;
   color: #8cc869;
 }

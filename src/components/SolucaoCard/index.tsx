@@ -9,6 +9,7 @@ import folha from "../../assets/img/Solucoes1.png";
 import uvas from "../../assets/img/Solucoes2.png";
 import mudas from "../../assets/img/Solucoes3.png";
 import raizes from "../../assets/img/Solucoes4.png";
+import { Circle } from "lucide-react";
 
 type Props = {
   icon: "escudo" | "setas" | "lupa" | "raiz";
@@ -52,9 +53,12 @@ const SolucaoCard = ({ icon, img, title, children }: Props) => {
         <img src={selectImg(img)} alt={img} />
         {children}
       </div>
-      <button className={styles.btn}>
-        <strong> Clique aqui e saiba mais</strong>
-      </button>
+      <div className={styles.btn_area}>
+        <button className={styles.btn}>
+          <strong> Clique aqui e saiba mais</strong>
+        </button>
+        <Circle strokeWidth={0.75} size={48} className={styles.circle} />
+      </div>
     </div>
   );
 };

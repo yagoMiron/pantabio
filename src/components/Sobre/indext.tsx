@@ -1,3 +1,4 @@
+import { Circle } from "lucide-react";
 import styles from "./styles.module.css";
 const Sobre = () => {
   return (
@@ -11,6 +12,7 @@ const Sobre = () => {
       </p>
       <hr className={styles.separator} />
       <div className={styles.primeira_camada}>
+        <Circle strokeWidth={0.1} size={480} className={styles.circle} />
         <div className={styles.area_ovalada}>
           <div className={styles.info}>
             <div>
