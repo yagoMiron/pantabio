@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import { MailPlus } from "lucide-react";
 import sendEmail from "../../services/sendEmail";
 import { useState } from "react";
+import IsEmail from "../../services/isEmail";
 
 export default function Contato() {
   const [name, setName] = useState("");
@@ -21,7 +22,12 @@ export default function Contato() {
 
         <form
           className={styles.formulario}
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => {
+            e.preventDefault();
+            setName("");
+            setEmail("");
+            setMessage("");
+          }}
         >
           <div className={styles.inputLinha}>
             <input
@@ -58,10 +64,9 @@ export default function Contato() {
           <button
             className={styles.sendBtn}
             onClick={() => {
-              sendEmail({ name, email, message });
-              setName("");
-              setEmail("");
-              setMessage("");
+              if (name && email && IsEmail(email) && message) {
+                sendEmail(name, email, message);
+              }
             }}
           >
             4. Enviar mensagem <MailPlus height={32} width={32} />
