@@ -5,8 +5,12 @@ import { ChevronUp } from "lucide-react";
 const Footer = () => {
   return (
     <div className={styles.page}>
-      <div className={styles.logo_area}>
-        <img src={logo} alt="Pantabio Bioprospectando o futuro" />
+      <div>
+        <img
+          className={styles.logo}
+          src={logo}
+          alt="Pantabio Bioprospectando o futuro"
+        />
         <p className={styles.marca}>Todos os direitos reservados.</p>
       </div>
       <div className={styles.contact_area}>

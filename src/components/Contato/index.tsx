@@ -30,6 +30,7 @@ export default function Contato() {
             placeholder="3. Sua mensagem"
             className={styles.textarea}
           ></textarea>
+          <button className={styles.sendBtn}>Enviar mensagem</button>
         </form>
       </div>
     </div>

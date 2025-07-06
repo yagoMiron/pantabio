@@ -46,4 +46,12 @@
   background-size: 27;
   background-position: center;
   background-position-x: calc(100% - 12px);
+  border: solid 1px #8cc869;
+}
+
+.btn:hover {
+  background-image: url("../../assets/icons/right_arrow_hover.svg");
+  cursor: pointer;
+  background-color: #2b4840;
+  color: #8cc869;
 }

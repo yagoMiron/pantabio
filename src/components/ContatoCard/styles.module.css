@@ -50,3 +50,8 @@
   transform: rotate(90deg);
   margin-right: -100px;
 }
+@media (max-width: 820px) {
+  .button {
+    display: none;
+  }
+}
