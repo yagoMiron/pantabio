@@ -5,9 +5,9 @@ import { useState } from "react";
 import IsEmail from "../../services/isEmail";
 
 export default function Contato() {
-  const [name, setName] = useState("");
+  const [nome, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [mensagem, setMessage] = useState("");
   return (
     <div className={styles.contatoSection}>
       <div className={styles.textoContainer}>
@@ -32,7 +32,7 @@ export default function Contato() {
           <div className={styles.inputLinha}>
             <input
               type="text"
-              value={name}
+              value={nome}
               onChange={(e) => {
                 setName(e.target.value);
               }}
@@ -53,7 +53,7 @@ export default function Contato() {
           </div>
           <textarea
             placeholder="3. Sua mensagem"
-            value={message}
+            value={mensagem}
             onChange={(e) => {
               setMessage(e.target.value);
             }}
@@ -64,8 +64,8 @@ export default function Contato() {
           <button
             className={styles.sendBtn}
             onClick={() => {
-              if (name && email && IsEmail(email) && message) {
-                sendEmail(name, email, message);
+              if (nome && email && IsEmail(email) && mensagem) {
+                sendEmail(nome, email, mensagem);
               }
             }}
           >
